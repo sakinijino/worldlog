@@ -1,0 +1,116 @@
+/* mambo core stuff */
+a:link, a:visited {
+ color: #297FC2; 
+}
+
+a:hover {
+ color: #297FC2;
+}
+a.rss{
+ color: #000000;
+}
+a.map{
+ text-decoration:none;
+}
+
+/* CSS Document */
+body {
+ margin: 2px;
+ margin-top: 0px;
+ height: 100%;
+ padding: 0px;
+ font-family: Tahoma, ËÎÌו, Arial, Helvetica, Sans Serif;
+ font-size: 12px;
+ color: #333333;
+ background: #ffffff;
+}
+
+p {
+ margin: 2px;
+ line-height:100%;
+ margin-top: 0px;
+ height: 100%;
+ padding: 0px;
+ font-family: Tahoma, ËÎÌו, Arial, Helvetica, Sans Serif;
+ color: #333333;
+ background: #ffffff;
+}
+
+img {
+  border:0px;
+}
+
+input[type='button'] {
+ background-color:#FFFFFF;
+ color:#808080;
+ border:solid #808080 1px;
+ cursor: pointer;
+}
+
+div{
+ margin: 0px;
+ padding: 0px;
+ position:relative;
+}
+div.disappear, span.disappear{
+ display:none;
+}
+div.popupmenu {
+ background-color:#FFFFFF;
+ position:absolute;
+ z-index:725;
+ border-style:solid;
+ border-color:#000000;
+ border-width:1px;
+ padding:4px;
+ width:60px;
+}
+div.map {
+ width: 700px;
+ height: 500px;
+}
+div.section {
+ BORDER-top: rgb(0,0,0) 1px dotted; 
+ BORDER-bottom: rgb(0,0,0) 1px dotted; 
+ BORDER-left: rgb(0,0,0) 1px dotted;
+ BORDER-right: rgb(0,0,0) 1px dotted;
+ margin: 2px;
+ padding: 2px;
+}
+div.separator{
+ BORDER-top: rgb(0,0,0) 1px dotted; 
+ margin: 2px;
+ padding: 2px;
+}
+
+span.link{
+ text-decoration : underline;
+ cursor: pointer;
+ color:#297FC2;
+}
+span.button{
+ background-color:#FFFFFF;
+ color:#808080;
+ border:solid #808080 1px;
+ cursor: pointer;
+ padding-left: 6px;
+ padding-right: 6px;
+}
+
+ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+li {
+ line-height: 110%;
+ padding-left: 2px;
+ padding-top: 0px;
+}
+
+
+td {
+ text-align: left;
+ font-size: 12px;
+}
