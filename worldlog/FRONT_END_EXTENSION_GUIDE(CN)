@@ -1,0 +1,72 @@
+* 扩展Item类型：javascript/item.js文件中ItemTypes定义了Item的类型
+  添加如下语句即扩展Item的类型：
+  ItemType.Types['diary'] = new ItemType('diary', '日记', 'images/Diary.png', DiaryViewer);
+  其中
+  diary，类型名，保存到数据库中的类型名
+  日记，可读的类型名
+  images/Diary.png，给类型的图片
+  DiaryViewer，类型的显示器，默认为ItemViewer
+
+
+* 类型显示器：javascript/itemviewer中包含用于将类型显示到界面的显示器
+  可以继承默认的ItemViewer并添加到类型定义中，以修改类型显示的行为。
+  ItemViewer中被外部使用的函数
+     * getDetailDiv：Item详细信息，即ItemDetailDiv中显示的内容
+     * getItemSpan：Item概要信息，即每个Item列表中一个Item显示的内容
+    * getHumanName：Item的可读类型名
+     * getMapTitle：Map中Item的文字信息
+     * getIcon：Map中Item的图片路径
+     * getOpenInfoWindow：Map中Item的弹出窗口信息
+  其他ItemView中的函数主要用于生成界面元素供以上函数使用。
+
+
+* 扩展地图类型
+  地图类型的统一接口还没有被明确地抽象出来。如果要扩展地图类型参考51ditu中51map和51mapitem的实现，需要实现这两个文件中所实现的所有函数。
+  不要参考gmap中的实现，因为51map进行了对gmap的适配添加了一些函数。gmap本身包括这些函数所以没有实现。
+
+
+* 事件机制：
+  用Model.generateClassEvents、Model.generateFactoryEvents函数来定义事件，如下：
+    Item.Events = ['Create', 'Update', 'Delete', 'Focus', 'Load'];
+    Model.generateClassEvents(Item, Item.Events);
+    Model.generateFactoryEvents(ItemFactory, Item.Events);
+  以上代码为Item类定义了Create等五个事件。
+
+  定义事件后，对于每个事件Event，类对象增加registerEventListener、unRegisterEventListener、onEvent三个方法，类工厂增加registerEventListener、unRegisterEventListener两个方法。
+  在类工厂上注册的Listener将监听每个工厂Create方法创建的对象。
+  每个Listener必须为一个函数。默认传入Listener的参数为触发事件的对象，但部分事件覆写了这个设置。
+
+  Item的事件：
+    Create：创建
+    Update：更新
+    Delete：删除
+    Focus：用户选择某个Item时触发
+    Load：从远程读取后触发
+  Profile的事件：
+    Create：创建
+    Delete：删除
+    AddItem：添加一个Item。Listener接受的参数为profile和item
+    DelItem：删除一个Item。Listener接受的参数为profile和item
+    Select：选中，地图响应该事件过滤地图上的Item
+    UnSelect：取消选定，地图清除过滤
+  Tag的事件：
+    Select：选中，地图响应该事件过滤地图上的Item
+    UnSelect：取消选定，地图清除过滤
+  User的事件：
+    Login：用户登录
+    Logout：用户退出
+    UserItemsLoad：用户创建的Item被读取
+    UserItemsUpdate：用户创建的Item更新。Item的Create和Delete事件将触发这个事件
+    UserProfilesLoad：用户创建的Profile被读取
+    UserProfilesUpdate：用户创建的Profile更新。Profile的Create和Delete事件将触发这个事件
+  Map的事件：
+    Click：点击，Listener接受的参数为map和object{x:??,y:??}（x经度，y纬度）
+    MoveEnd：移动
+    Zoom：缩放
+  MapItem的事件：
+    Click：点击
+
+
+* 扩展层
+  在地图右侧添加新的层。参考include目录中的文件。监听必要的事件响应模型变化即可。
+

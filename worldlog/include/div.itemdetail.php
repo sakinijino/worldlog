@@ -1,4 +1,4 @@
-<div id="itemdetail" class="section disappear">
+﻿<div id="itemdetail" class="section disappear">
   <div id="itemdetail.detail"></div>
 </div>
 

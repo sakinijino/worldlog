@@ -1,4 +1,4 @@
-<div id="help" class="section disappear">
+﻿<div id="help" class="section disappear">
   点地图上的图标查看内容<br>
   使用左上角的+ -按钮可以放大,缩小地图<br>
   拖动鼠标移动地图<br>

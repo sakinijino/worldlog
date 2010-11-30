@@ -66,10 +66,7 @@
   	</tr>
     </table>
     <div align="center">
-      Copyright worldlog.org.  All rights reserved.
-    </div>
-    <div align="center">
-      Sponsored by<a href="http://www.vankee.com">Vankee</a> Discover,Create & Share Your Internet.
+      Powered by <a href="https://github.com/sakinijino/worldlog" target="_blank">Worldlog@github</a>
     </div>
   </body>
   <script>Page.run();</script>

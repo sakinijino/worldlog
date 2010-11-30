@@ -11,13 +11,14 @@
 		</style>
 		<link href="css/worldlog.css" rel="stylesheet" type="text/css"/>
 
-	  <script src='http://maps.google.com/maps?file=api&v=2.44&key=ABQIAAAAjNHXJddYFywMlUHO5ueGnhQ41ZJeB_sTvwfK4xOeBaLOIHmpphSSUw94a1q_H7X4RKUuXb6sWL16nw' type='text/javascript'></script>
+    <script src="http://api.51ditu.com/apis/mapapi?key=dmFua2VlLmNvbQ==1qaz2wsxc2FraW5pamlub0BnbWFpbC5jb20mJiZ2YW5rZWUuY29t" language="javascript"></script>
 	  <script src='javascript/prototype.js' type='text/javascript'></script>
 	  <script src='javascript/model.js' type='text/javascript'></script>
 	  <script src='javascript/parsexml.js' type='text/javascript'></script>
-	  <script src='javascript/gmap/gmap.js' type='text/javascript'></script>
-	  <script src='javascript/gmap/gExtension.js' type='text/javascript'></script>
-	  <script src='javascript/gmap/gmapitem.js' type='text/javascript'></script>
+	  <script src='javascript/51ditu/lnglatconvert.js' type='text/javascript'></script>
+	  <script src='javascript/51ditu/51Extension.js' type='text/javascript'></script>
+	  <script src='javascript/51ditu/51map.js' type='text/javascript'></script>
+	  <script src='javascript/51ditu/51mapitem.js' type='text/javascript'></script>
 	  <script src='javascript/user.js' type='text/javascript'></script>
 	  <script src='javascript/tag.js' type='text/javascript'></script>
 	  <script src='javascript/profile.js' type='text/javascript'></script>
@@ -26,11 +27,11 @@
 	  <script src='javascript/itemviewer/linkviewer.js' type='text/javascript'></script>
 	  <script src='javascript/itemviewer/diaryviewer.js' type='text/javascript'></script>
 	  <script src='javascript/item.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/__init__.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/user.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/tag.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/item.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/profile.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/__init__.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/user.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/tag.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/item.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/profile.js' type='text/javascript'></script>
 	  <script src='javascript/page.js' type='text/javascript'></script>
 	</head>
 

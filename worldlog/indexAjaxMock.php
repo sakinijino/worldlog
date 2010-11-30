@@ -26,11 +26,11 @@
 	  <script src='javascript/itemviewer/linkviewer.js' type='text/javascript'></script>
 	  <script src='javascript/itemviewer/diaryviewer.js' type='text/javascript'></script>
 	  <script src='javascript/item.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/__init__.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/user.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/tag.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/item.js' type='text/javascript'></script>
-	  <script src='javascript/ajaxrequest/profile.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/__init__.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/user.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/tag.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/item.js' type='text/javascript'></script>
+	  <script src='javascript/ajaxrequestMock/profile.js' type='text/javascript'></script>
 	  <script src='javascript/page.js' type='text/javascript'></script>
 	</head>
 

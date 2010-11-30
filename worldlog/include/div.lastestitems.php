@@ -1,4 +1,4 @@
-<div id="lastestitems" class="section disappear">
+﻿<div id="lastestitems" class="section disappear">
   最新添加的节点：<br/>
   <div id="lastestitems.list"></div>
 </div>

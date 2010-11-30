@@ -1,4 +1,4 @@
-<div id="menubar">
+﻿<div id="menubar">
   <span>
   &nbsp;|&nbsp;<span id="menubar.map">地图切换</span>
   <div id="menubar.maplist" class="popupmenu" style="width:70px">
