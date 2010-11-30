@@ -1,1 +1,1 @@
-mysql uk2016887_db_test < create.sql -u root -p
+mysql worldlog_db_test < create.sql -u root -p

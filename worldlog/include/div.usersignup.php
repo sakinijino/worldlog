@@ -1,4 +1,4 @@
-﻿<!--View-->
+<!--View-->
 <div id="usersignup" class="section disappear">
   请输入用户名: <input type="text" size='14' id="usersignup.name"/><br/>
   请输入昵称: <input type="text" size='14' id="usersignup.nick"/><br/>

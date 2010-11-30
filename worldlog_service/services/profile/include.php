@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   define("MODELDIR", "../../models/");
   define("DAODIR", "../../models/daos/");
    

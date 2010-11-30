@@ -1,4 +1,4 @@
-﻿<div id="addblog" class="section disappear">
+<div id="addblog" class="section disappear">
   如果您想在地图上显示您的Blog,在这里添加.<br/>
   请输入Blog订阅的RSS地址:<br/>
   RSS地址: <input type="text" id="addblog.rss" size="24" value=""/><span style="color:red"> *</span><br/>

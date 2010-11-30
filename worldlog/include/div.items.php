@@ -1,4 +1,4 @@
-﻿<div id="items" class="section disappear">
+<div id="items" class="section disappear">
   你添加的信息点: <br/>
   <div id="items.list"></div><!--clear when logout-->
   <br/>

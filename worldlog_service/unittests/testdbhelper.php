@@ -1,10 +1,10 @@
 <?php
   function getTestDBHelper()
   {
-    $base = 'uk2016887_db_test';
+    $base = 'worldlog_db_test';
     $server = 'localhost';
-    $user = 'uk2016887';
-    $pass = 'm8n3q1n2';
+    $user = 'root';
+    $pass = 'pass';
     
     return new DBHelper($base, $server, $user, $pass, true);
   }

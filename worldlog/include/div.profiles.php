@@ -1,4 +1,4 @@
-﻿<div id="profiles" class="section disappear">
+<div id="profiles" class="section disappear">
   <span id="profiles.currentprofile"></span>
   我的地图: <br/>
   <div id="profiles.list"></div><!--clear when logout-->

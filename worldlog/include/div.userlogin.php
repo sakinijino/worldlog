@@ -1,4 +1,4 @@
-﻿<!--View-->
+<!--View-->
 <div id="userlogin" class="section">
   想添加您的Blog,请登录或注册:<br/> 
   用户: <input type="text" size='20' id="userlogin.name"/><br/>
