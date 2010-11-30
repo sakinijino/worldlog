@@ -1,26 +1,27 @@
 Worldlog is a PHP based Geo-Location Markup Web Application
 
 Setup:
-  * Setup your PHP environment (with Mysql).
-  * Copy the two folder (worldlog and worldlog_service).
+  * Setup your PHP and Mysql environment (PHP 5 and Mysql 5 maybe).
+  * Copy the two folders (worldlog and worldlog_service).
   * Build database by using the scripts in worldlog_service/db.
   * Change test database connection info in worldlog_service/unittests/testdbhelper.php.
   * Change database connection info in worldlog_service/services/dbhelper.php.
 
 About Worldlog Architecture:
-  * The communication between front and back end of worldlog purely rely on XML-RPC.
-  * In fact, you can replace each individual part, eg. keeping the front end but rewriting back end with RoR.
+  * The communication between front and back end purely rely on XML-RPC.
+    In fact, you can replace each individual part, eg. keeping the front end but rewriting back end with RoR.
 
 Front End:
   * Worldlog folder contains the front end of worldlog app.
+  * The entry point is index.php.
   * You can visit indexAjaxMock.php before your back end setup.
   * The front end provides several extension points, so that you can extend item types, map types and so on. (details in worldlog/FRONT_END_EXTENSION_GUIDE(CN))
 
 Back End:
   * Worldlog_service folder contains the back end of worldlog app.
   * All test php files in worldlog_service/unittests/daotests and modeltests should display "All test passed.".
-    However, I'm so sorry that I'm sure about the compatible PHP and Mysql version, since the app has been developed too long ago (about 2006)...
-  * The services provided by the back end is illustrated in worldlog_service/BACK_END_REQUEST_EXAMPLES.
+    However, I'm so sorry that I'm not sure about the compatible PHP and Mysql version, since the app has been developed too long ago (about 2006)...
+  * The services provided by the back end are illustrated in worldlog_service/BACK_END_REQUEST_EXAMPLES.
 
 Screenshots:
   * ./Screenshot.png
